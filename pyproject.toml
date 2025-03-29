@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-for-data-analysis-book"
+version = "1.0.0"
+dependencies = ["black", "numpy", "pandas"]
+
+[tool.setuptools]
+packages = ["PFDA"]

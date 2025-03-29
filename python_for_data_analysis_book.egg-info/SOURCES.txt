@@ -1,0 +1,7 @@
+pyproject.toml
+PFDA/__init__.py
+python_for_data_analysis_book.egg-info/PKG-INFO
+python_for_data_analysis_book.egg-info/SOURCES.txt
+python_for_data_analysis_book.egg-info/dependency_links.txt
+python_for_data_analysis_book.egg-info/requires.txt
+python_for_data_analysis_book.egg-info/top_level.txt
