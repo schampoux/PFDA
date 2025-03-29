@@ -45,7 +45,61 @@ print("\nUsing `.arange` method is just like the python `range()` function, exce
 print("\nExplicitly convert or 'cast' an array from one data type to another using `array.astype(type)` method.\n")
 
 # if you cast float type to int type, the decimal will be truncated, no rounding 
-# if iyou have an array of string(int) or string(float), you can use .astype to convert them to numeric form. 
+# if you have an array of string(int) or string(float), you can use .astype to convert them to numeric form. 
+    # if casting were to fail, a ValueError will be raised
+    # when specifying a dtype for casting, you can also use another arrays .dtype attribute 
+    
+int_array = np.arange(10)
+float_array = np.array([.22, .270, .357, .380, .44, .50], dtype = np.float64)
+
+int_array = int_array.astype(float_array.dtype)
+print("\nCast `int_array` to float using `float_array.dtype`:\n", "`int_array.astype(float_array.dtype)`\n")
+print("Result:", "`int_array.dtype = `", int_array.dtype)
+
+# ARITHMETIC WITH NUMPY ARRAYS 
+print("ARITHMETIC")
+
+print("Definition: Vectorization is the expression of batch operations on data without writing any for loops. Any arithmetic between equal sized arrays applies the operation element wise")
+
+
+arr = np.array([[1., 2., 3.],[4., 5., 6.]])
+mult = arr*arr
+sub = arr-arr
+
+print("\nStarting Array:\n", arr, "\nMultiply it by itself once:\n", mult, "\nSubtract it from itself once:\n", sub)
+
+#Arithmetic operations with scalars propogate the scalar argument to each element in the array. 
+print("\n1/arr will propogate the scalar argument to each element in the array:\n", 1/arr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
