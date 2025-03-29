@@ -57,7 +57,7 @@ print("\nCast `int_array` to float using `float_array.dtype`:\n", "`int_array.as
 print("Result:", "`int_array.dtype = `", int_array.dtype)
 
 # ARITHMETIC WITH NUMPY ARRAYS 
-print("ARITHMETIC")
+print("\n\n\nARITHMETIC\n\n")
 
 print("Definition: Vectorization is the expression of batch operations on data without writing any for loops. Any arithmetic between equal sized arrays applies the operation element wise")
 
@@ -72,16 +72,31 @@ print("\nStarting Array:\n", arr, "\nMultiply it by itself once:\n", mult, "\nSu
 print("\n1/arr will propogate the scalar argument to each element in the array:\n", 1/arr)
 
 
+# comparisons with arrays of the same size yield boolean arrays 
+arr2 = np.array([[1., 9., 6.],[8., 4., 7.]])
+print("\nComparisons with arrays of the same size will yield boolean arrays: \n", "arr2:\n", arr2, "\n`arr > arr2`\n", arr>arr2)
+
+# evaluating operations between differently sized arrays is called broadcasting.
+
+print("\n\n\nINDEXING\n\n")
 
 
+# indexing 1d arrays is like indexing lists in python. 
+arr = np.arange(10)
+
+# if you assign a scalar value to a slice, arr[5:8] = 12, then that value is broadcasted (propogated) to the entire selection 
+arr[5:8]=12
+
+# numpy does not copy data when slicing, alternatively, slices are views on the original data. 
+arr = np.arange(10)
+arr_slice = arr[5:8]
+arr_slice[:] = 100
+print(arr)
+    # OUTPUT: [  0   1   2   3   4 100 100 100   8   9]
 
 
-
-
-
-
-
-
+# notice the change in the original array 
+# notice the bare slice `[:]` assigns to all values of the array
 
 
 
