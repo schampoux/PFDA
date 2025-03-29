@@ -1,0 +1,10 @@
+ndarray - multidimensional array providing fast array-oriented arithmetic operations and flexible broadcasting capabilities 
+
+Note: NumPy by itself does not provide modeling or scientific functionality. 
+
+NumPy is important for numerical computationsin Python because it is designed for efficiency on large arrays of data. 
+    - Numpy iinternally stores data in a contiguous block of memory, independent of other built-in python objects. 
+    - NumPy's library of algorithms written in C can operate on this memory without any type-checking or other overhead. 
+    - NumPy operations perform complex computations on entire arrays without the need for Python for loops 
+    
+
